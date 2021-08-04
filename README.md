@@ -32,18 +32,13 @@ But already prepared for any complexity using typing and even unit testing with 
 │   │   │   └── index.tsx
 │   │   │       styles.ts
 │   │   │       component.spec.ts
-│   │   │       IComponent.ts # All types and Interface for component
 │   ├── pages or screens
 │   │   ├── home # Folder for page
 │   │   │   └── index.tsx
 │   │   │       styles.ts
-│   │   │       page.spec.ts
-│   │   │       IPage.ts # All types and Interface for page
 │   │   ├── notfound # Folder for page
 │   │   │   └── index.tsx
 │   │   │       styles.ts
-│   │   │       page.spec.ts
-│   │   │       IPage.ts # All types and Interface for componen
 │   ├── providers
 │   │   ├── mainProvider
 │   │   │   └── index.tsx
@@ -57,6 +52,7 @@ But already prepared for any complexity using typing and even unit testing with 
 
 ```bash
 $ git clone https://github.com/JohanDev6/Template-My-react-typescript-styled
+& yarn install
 $ cd src/
 $ yarn start
 ```
