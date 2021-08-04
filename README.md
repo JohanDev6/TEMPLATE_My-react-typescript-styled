@@ -11,6 +11,9 @@ But already prepared for any complexity using typing and even unit testing with 
 
 - Clean Structure
 - Easy manipulation
+- Theming
+- Context
+- Routers
 - Typing
 - Testing
 
@@ -19,7 +22,7 @@ But already prepared for any complexity using typing and even unit testing with 
 - React Router
 - Styled Components
 - React Spring
-- Jest and Enzyme
+- React test renderer and Enzyme
 - React Icons
 
 ## Folder structure
