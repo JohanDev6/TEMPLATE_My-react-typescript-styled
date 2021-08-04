@@ -52,7 +52,7 @@ But already prepared for any complexity using typing and even unit testing with 
 
 ```bash
 $ git clone https://github.com/JohanDev6/Template-My-react-typescript-styled
-& yarn install
+$ yarn install
 $ cd src/
 $ yarn start
 ```
