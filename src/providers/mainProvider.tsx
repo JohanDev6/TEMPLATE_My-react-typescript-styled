@@ -9,12 +9,23 @@ export interface IMainProvider {
 	children: ReactNode
 }
 
+export interface IProviderData {
+	data: {
+		theme: ITheme,
+		balance: number,
+	},
+	setData: {
+		setTheme: React.Dispatch<React.SetStateAction<ITheme>>,
+		setBalance: React.Dispatch<React.SetStateAction<number>>,
+	}
+}
+
 export const MainProvider = ({children} : IMainProvider) => {
 
 	const [theme, setTheme] = useState<ITheme>(Themes[0]) 
 	const [balance, setBalance] = useState<number>(0)
 
-	let providerData = {
+	let providerData : IProviderData = {
 		data: {
 			theme: theme,
 			balance: balance, // Or somy balance,
