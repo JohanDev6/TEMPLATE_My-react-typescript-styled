@@ -1,19 +1,21 @@
 import React, { ReactElement } from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 import App from './App'
 import NotFound from './pages/notfound'
-import Mobile from './pages/mobile'
+import Home from './pages/home'
 
 const Routes = () : ReactElement => {
 
     return (
         <Router>
-            <Route exact path='/' component={App} />
-            <Route exact path='/mobile' component={Mobile} />
-            <Route exact path='*' component={NotFound} />
+            <Switch>
+                <Route exact path='/' component={App} />
+                <Route exact path='/home' component={Home} />
+                <Route exact path='*' component={NotFound} />
+            </Switch>
         </Router>
     )
-};  
-  
+};
+
 export default Routes;  

@@ -5,14 +5,7 @@
  * 1 - Dark Theme
 */
 
-export interface ITheme {
-    background: string;
-    text: string;
-    main: string;
-    footer: string;
-    button: string;
-    link: string;
-}
+import { ITheme } from './interfaces/mainInterfaces'
 
 const Themes : ITheme[] = [
     {

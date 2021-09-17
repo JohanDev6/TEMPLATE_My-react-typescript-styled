@@ -9,20 +9,20 @@ import GlobalStyles from './styles/globalStyles'
 
 const Root = () => {
 
-  const { data, setData } : IProviderData | any = useContext(MainContext)
+  const { data } : IProviderData | any = useContext(MainContext)
 
   return(
-    <MainProvider>
-      <ThemeProvider theme={data.theme}>
+      <ThemeProvider theme={data?.theme}>
           <GlobalStyles/>
           <Routes/>
       </ThemeProvider>
-    </MainProvider>
   )
 }
 
 ReactDOM.render(
-  <Root/>
+  <MainProvider>
+    <Root/>
+  </MainProvider>
   ,
   document.getElementById('root')
 );
