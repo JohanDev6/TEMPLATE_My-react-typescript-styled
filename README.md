@@ -43,8 +43,7 @@ But already prepared for any complexity using typing and even unit testing with 
 │   │   │   └── index.tsx
 │   │   │       styles.ts
 │   ├── providers
-│   │   ├── mainProvider
-│   │   │   └── index.tsx
+│   │   ├── mainProvider.tsx
 │   └── utils or hooks
 │       └── useTitle.tsx
 |           [...]
